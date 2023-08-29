@@ -10,8 +10,7 @@ class Dog:
 		for k in self.data.keys():
 			print(f"{k}: {self.data[k]} ", end='')
 		print()
-	def __str__(self):
-		self.print()
+
 
 a = Dog()
 a.setParamter("name","Godzilla")
