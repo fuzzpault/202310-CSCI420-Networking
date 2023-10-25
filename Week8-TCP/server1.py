@@ -14,8 +14,9 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 	while True:
 		print("Waiting for accept")
 		client_socket, addr = s.accept()
+		print(f"Got accept from {addr}")
 		while True:
-			print(f"Got accept from {addr}")
+			
 			try:
 				msg = client_socket.recv(1024)
 				if len(msg) == 0:
